@@ -102,7 +102,7 @@
         #student-links-section {
             margin-top: 20px;
         }
-        /* ✅ 改成 Grid，一排 4 個 */
+        /* 改成 Grid，一排 4 個 */
         .qr-grid {
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr)); /* 電腦螢幕：4 欄 */
@@ -114,8 +114,8 @@
         .qr-card {
             text-align: center; /* QR 卡片本身置中文字 */
             border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 12px;
+            border-radius: 20px;
+            padding: 20px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
             text-align: center;
             background-color: #f9fafb;
@@ -142,7 +142,7 @@
             width: 100%;               /* 關鍵：讓容器撐滿整張卡片寬度 */
             margin: 8px 0;
         }
-        /* 🔑 關鍵：不管 qrcodejs 生的是 table / canvas / img，都一律置中 */
+        /* 關鍵：不管 qrcodejs 生的是 table / canvas / img，都一律置中 */
         .qr-canvas > img,
         .qr-canvas > canvas,
         .qr-canvas > table {
@@ -545,3 +545,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
 </script>
 </body>
 </html>
+
